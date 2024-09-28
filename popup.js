@@ -1,10 +1,13 @@
+// 'スケジュール設定'ボタンにクリックイベントリスナーを追加
 document.getElementById('scheduleButton').addEventListener('click', scheduleURL);
 
 function scheduleURL() {
+    // 入力された時刻とURLを取得
     const timeInput = document.getElementById('timeInput').value;
     const urlInput = document.getElementById('urlInput').value;
     const statusElement = document.getElementById('status');
 
+    // 入力チェック
     if (!timeInput || !urlInput) {
         statusElement.textContent = '時刻とURLを入力してください。';
         return;
@@ -25,5 +28,6 @@ function scheduleURL() {
         when: targetTime.getTime()
     });
 
+    // 設定完了メッセージを表示
     statusElement.textContent = `${targetTime.toLocaleString()}にURLを開く予定です。`;
 }

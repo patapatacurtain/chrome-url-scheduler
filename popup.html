@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>URL Scheduler</title>
     <style>
+        /* 基本的なスタイリング */
         body {
             width: 300px;
             font-family: Arial, sans-serif;
@@ -21,10 +22,15 @@
 
 <body>
     <h2>URL Scheduler</h2>
+    <!-- 時刻入力フィールド -->
     <input type="time" id="timeInput">
+    <!-- URL入力フィールド -->
     <input type="url" id="urlInput" placeholder="https://example.com">
+    <!-- スケジュール設定ボタン -->
     <button id="scheduleButton">スケジュール設定</button>
+    <!-- ステータスメッセージ表示エリア -->
     <p id="status"></p>
+    <!-- JavaScriptファイルの読み込み -->
     <script src="popup.js"></script>
 </body>
 
