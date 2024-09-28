@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "URL Scheduler",
+    "version": "1.0",
+    "description": "指定した時刻にURLを開く拡張機能",
+    "permissions": [
+        "alarms",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}
