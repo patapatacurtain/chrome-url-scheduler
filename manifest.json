@@ -5,7 +5,8 @@
     "description": "指定した時刻にURLを開く拡張機能",
     "permissions": [
         "alarms",
-        "tabs"
+        "tabs",
+        "storage"
     ],
     "background": {
         "service_worker": "background.js"

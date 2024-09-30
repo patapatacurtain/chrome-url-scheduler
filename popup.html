@@ -1,36 +1,35 @@
+<meta charset="UTF-8">
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 
 <head>
-    <meta charset="UTF-8">
     <title>URL Scheduler</title>
     <style>
-        /* 基本的なスタイリング */
         body {
+            font-family: 'Meiryo', 'Hiragino Kaku Gothic Pro', 'MS PGothic', sans-serif;
             width: 300px;
-            font-family: Arial, sans-serif;
             padding: 10px;
         }
 
         input,
         button {
             margin: 5px 0;
-            width: 100%;
+        }
+
+        #scheduleList {
+            margin-top: 10px;
         }
     </style>
 </head>
 
 <body>
-    <h2>URL Scheduler</h2>
-    <!-- 時刻入力フィールド -->
-    <input type="time" id="timeInput">
-    <!-- URL入力フィールド -->
-    <input type="url" id="urlInput" placeholder="https://example.com">
-    <!-- スケジュール設定ボタン -->
+    <h1>URL Scheduler</h1>
+    <input type="time" id="timeInput" required>
+    <input type="url" id="urlInput" placeholder="https://example.com" required>
     <button id="scheduleButton">スケジュール設定</button>
-    <!-- ステータスメッセージ表示エリア -->
-    <p id="status"></p>
-    <!-- JavaScriptファイルの読み込み -->
+    <div id="status"></div>
+    <h2>スケジュール一覧</h2>
+    <ul id="scheduleList"></ul>
     <script src="popup.js"></script>
 </body>
 
